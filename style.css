@@ -23,7 +23,14 @@
 }
 
 #bottom{
-    background-color: rgb(121, 121, 121);
+    background-image: url(https://www.publicdomainpictures.net/pictures/310000/velka/bokeh-hintergrund-lichter-textur-1571914632Wn9.jpg)!important;
+    background-position: center!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px )!important;
+    -webkit-backdrop-filter: blur( 4px )!important;
     border-radius: 0px 0px 30px 30px ;
 }
 
@@ -43,4 +50,13 @@
     color: white!important;
     position: absolute;
     right: 20px;
+}
+
+.line {
+    text-decoration: line-through;
+    color: black!important;
+}
+
+span{
+    cursor: pointer;
 }
