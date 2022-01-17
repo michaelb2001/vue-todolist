@@ -2,22 +2,19 @@ let vm = new Vue({
     el:"#app",
     data: {
         arrayObj: [
-            {
-                text:"primo",
-                done: false
-            },
-            {
-                text:"secondo",
-                done: false
-            },
-            {
-                text:"terzo",
-                done: false
-            },
-            {
-                text:"quarto",
-                done: false
-            }
+
         ]
+    },
+    methods:{
+        aggiungiElemento : function(){
+
+            let obj = {text : document.getElementById("aggiungi").value,
+                       done : false};
+            this.arrayObj.push(obj);
+            document.getElementById("aggiungi").value = "";
+        },
+        sottolinea : function(){
+            
+        }
     }
 });
