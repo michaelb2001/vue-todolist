@@ -28,8 +28,8 @@
 
         
         <div id="bottom" class="container px-3 py-4">
-            <div v-for="(elemento,index) in arrayObj" class="item d-flex text-start align-items-center px-3 rounded-pill">
-                <span class="text-start text-white" :class='[ elemento.done ? "line" : "" ]' @click="toggleClass(index)">{{elemento.text}}</span>
+            <div v-for="(elemento,index) in arrayObj" class="item d-flex flex-wrap text-start align-items-center px-3 rounded-pill">
+                <span class="text-start text-white d-flex flex-wrap" :class='[ elemento.done ? "line" : "" ]' @click="toggleClass(index)">{{elemento.text}}</span>
                 <i class='bx bx-x-circle' @click="cancellaElemento(index)"></i>
             </div>
         </div>
