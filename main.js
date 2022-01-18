@@ -7,8 +7,9 @@ let vm = new Vue({
     },
     methods:{
         aggiungiElemento : function(){
-            if(document.getElementById("aggiungi").value != ""){
-                let obj = {text : document.getElementById("aggiungi").value,
+            let aggiungi = document.getElementById("aggiungi").value ;
+            if(aggiungi != ""){
+                let obj = {text : aggiungi,
                           done : false};
                 this.arrayObj.push(obj);
                 document.getElementById("aggiungi").value = "";
